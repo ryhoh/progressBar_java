@@ -33,4 +33,33 @@ abstract class ProgressBar {
 		System.out.print("\r");	// cursor back
 		return true;
 	}
+	
+	@Override
+	public int hashCode() {
+		int result = 13;
+		result = result * 31 + (int) this.total;
+		result = result * 31 + (int) this.cur;
+		return result;
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o == this)
+			return true;
+		if(o == null)
+			return false;
+		if(!(o instanceof ProgressBar))
+			return false;
+		
+		ProgressBar pb = (ProgressBar) o;
+		if(this.total == pb.total && this.cur == pb.cur)
+			return true;
+		
+		return false;
+	}
+	
+	@Override
+	public String toString() {
+		return "cur:" + this.cur + " total:" + this.total;
+	}
 }
