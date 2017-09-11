@@ -2,7 +2,10 @@
 // Released under the MIT license
 // https://opensource.org/licenses/mit-license.php
 
-package progressBar;
+package main;
+
+import progressBar.ProgressBar;
+import progressBar.SimpleProgressBar;
 
 public class Main {
 

@@ -4,7 +4,7 @@
 
 package progressBar;
 
-abstract class ProgressBar {
+public abstract class ProgressBar {
 	
 	protected long total = -1;
 	protected long cur = -1;
@@ -20,7 +20,7 @@ abstract class ProgressBar {
 	
 	abstract void print();	// printing progressBar here
 	
-	protected boolean click() {
+	public boolean click() {
 		
 		this.cur++;
 		this.print();

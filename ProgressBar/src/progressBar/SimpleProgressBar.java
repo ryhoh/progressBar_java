@@ -8,7 +8,7 @@ import progressBar.ProgressBar;
 
 public class SimpleProgressBar extends ProgressBar{
 	
-	protected SimpleProgressBar(long total) {
+	public SimpleProgressBar(long total) {
 		super(total);
 	}
 	
