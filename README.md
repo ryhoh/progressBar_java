@@ -34,12 +34,12 @@ Usage:
 	ProgressBar pb = new SimpleProgressBar(10);
 	// give maximum value
 	
-	pb.click();
+	pb.print();
 	// first time, it must be like this.
 	// |-------------------|   0.0%
 	
 	pb.click();
+	pb.print();
 	// |**-----------------|  10.0%
 	
-	while(pb.click());
 	// click() returns boolean (false at 100%, else true)
